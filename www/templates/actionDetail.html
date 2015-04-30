@@ -1,0 +1,71 @@
+<ion-view ng-controller="actionController">
+	<ion-nav-bar class="bar-stable inside_header" ng-controller="loginController">
+		<div id="header_wrap">
+			<img class="logo_hydro" src="../img/logo_header_@2x.png" alt="logo_hydro"/>
+			<div class="xp_wrapper">
+		      <p class="xp">XP</p>
+		      <div class="loader_wrap">
+		         <div class="fill" data-xp="33%">
+		            <p>132<span>pts</span></p>
+		         </div>
+		      </div>
+		      <p class="grade">Lieutenant Premiere Classe</p>
+		   </div>
+		   <div class="logout" ng-click="logoutFunc()"><img src="../img/logout.svg" alt="Logout" /></div>
+		</div>
+	</ion-nav-bar>
+	<ion-content class="padding">
+		<div id="action">
+			<span class="icon-cross" ui-sref="map"></span>
+			<div id="title">
+				<h1><span class="icon-affiche"></span>Blublublu</h1>
+			</div>
+			<div id="description">
+				<p>Remplace une affiche de propagande mafia par une affiche de la résistance sur les panneau public. C'est notre devoir de lever le voile sur les agissements de la mafia et d'avertir les habitants des mensonges qui sont communiqués.</p>
+			</div>
+			<div id="action_attributes">
+				<div class="attribute">
+					<div class="label">
+						<p>xp max</p>
+					</div>
+					<div class="value">
+						<p>25xp</p>
+					</div>
+				</div>
+				<div class="attribute">
+					<div class="label">
+						<p>xp min</p>
+					</div>
+					<div class="value">
+						<p>-473xp</p>
+					</div>
+				</div>
+				<div class="attribute full">
+					<div class="label">
+						<p>influence prevue</p>
+					</div>
+					<div class="value">
+						<p>61%</p>
+					</div>
+				</div>
+				<div class="attribute">
+					<div class="label">
+						<p>baisse</p>
+					</div>
+					<div class="value">
+						<p>1.7%</p>
+					</div>
+				</div>
+				<div class="attribute">
+					<div class="label">
+						<p>cooldown</p>
+					</div>
+					<div class="value">
+						<p>100 ans</p>
+					</div>
+				</div>
+			</div>
+			<button class="button button-full button-action" ng-click="">effectuer action</button>
+		</div>
+	</ion-content>
+</ion-view>

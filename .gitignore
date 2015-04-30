@@ -1,0 +1,11 @@
+node_modules/
+temp/
+platforms/
+plugins/
+/config/*
+!/config/sample.json
+/www/js/constants.js
+ionic.project
+*.DS_Store
+*.log
+*.swp

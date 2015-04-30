@@ -1,0 +1,25 @@
+
+<ion-view>
+	<ion-nav-bar class="bar-stable inside_header">
+            <div id="header_wrap">
+			<img class="logo_hydro" src="../img/logo_header_@2x.png" alt="logo_hydro"/>
+			<div class="xp_wrapper">
+		      <p class="xp">XP</p>
+		      <div class="loader_wrap">
+		         <div class="fill" data-xp="}}">
+		            <p>{{user.xp}}<span>pts</span></p>
+		         </div>
+		      </div>
+		      <p class="grade">{{user.level.rankName}} {{user.username}}</p>
+		   </div>
+		   <div class="logout" ng-controller="loginController" ng-click="logoutFunc()"><img src="../img/logout.svg" alt="Logout" /></div>
+		</div>
+	</ion-nav-bar>
+
+
+    <ion-content scroll="false">
+        <!-- <div class=" test ion-ios-plus-outline"></div> -->
+        <leaflet id="leafletMap" defaults="defaults" center="mapCenter" geojson="geojson" layers="layers" maxbounds="maxbounds" markers="markers" data-tap-disabled="true" height="100%"></leaflet>
+    </ion-content>
+</ion-view>
+

@@ -1,0 +1,523 @@
+/*
+To customize the look and feel of Ionic, you can override the variables
+in ionic's _variables.scss file.
+
+For example, you might change some of the default colors:
+
+$light:                           #fff !default;
+$stable:                          #f8f8f8 !default;
+$positive:                        #387ef5 !default;
+$calm:                            #11c1f3 !default;
+$balanced:                        #33cd5f !default;
+$energized:                       #ffc900 !default;
+$assertive:                       #ef473a !default;
+$royal:                           #886aea !default;
+$dark:                            #444 !default;
+*/
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base:              #000;
+$gray-darker:            lighten($gray-base, 13.5%); // #222
+$gray-dark:              lighten($gray-base, 20%);   // #333
+$gray:                   lighten($gray-base, 33.5%); // #555
+$gray-light:             lighten($gray-base, 46.7%); // #777
+$gray-lighter:           lighten($gray-base, 93.5%); // #eee
+
+$brand-primary:         darken(#428bca, 6.5%); // #337ab7
+$brand-success:         #5cb85c;
+$brand-info:            #5bc0de;
+$brand-danger:          #d9534f;
+
+//## Hydromerta corporate
+
+
+$hydro-warning:			#9e1915;
+
+$hydro-orange:			#ea590c;
+
+$hydro-black:			#2b1a11;
+$hydro-blue:			#14333d;
+$hydro-blue-dark:		#06323c;
+$hydro-blue-middle:		#3e758e;
+$hydro-blue-light:		#49a9cf;
+
+$hydro-white-text:		#eeece1;
+
+
+$hydro-black-nav:		#333033;
+$hydro-red:				#9e1915;
+
+$hydro-braun:			#817874;
+$hydro-braun-light:		lighten($gray-base, 80%);
+
+
+
+// The path for our ionicons font files, relative to the built CSS in www/css
+$ionicons-font-path: "../lib/ionic/fonts" !default;
+
+// Include all of Ionic
+@import "www/lib/ionic/scss/ionic";
+
+.leaflet-control {
+    visibility: hidden;
+}
+
+
+$fairview:				'fairview_regular';
+$hoverage:				'hoverage';
+$icomoon:				'icomoon';
+$glyph:					'glyphicons';
+
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?-8g7j8c');
+    src:url('../fonts/icomoon.eot?#iefix-8g7j8c') format('embedded-opentype'),
+        url('../fonts/icomoon.woff?-8g7j8c') format('woff'),
+        url('../fonts/icomoon.ttf?-8g7j8c') format('truetype'),
+        url('../fonts/icomoon.svg?-8g7j8c#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fairview_regular';
+    src:url('../fonts/fairview_regular-webfont.eot');
+    src:url('../fonts/fairview_regular-webfont.eot') format('embedded-opentype'),
+        url('../fonts/fairview_regular-webfont.woff') format('woff'),
+        url('../fonts/fairview_regular-webfont.ttf') format('truetype'),
+        url('../fonts/fairview_regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fairview_smallcaps';
+    src:url('../fonts/fairview_smallcaps-webfont.eot');
+    src:url('../fonts/fairview_smallcaps-webfont.eot') format('embedded-opentype'),
+        url('../fonts/fairview_smallcaps-webfont.woff') format('woff'),
+        url('../fonts/fairview_smallcaps-webfont.ttf') format('truetype'),
+        url('../fonts/fairview_smallcaps-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hoverage';
+    src:url('../fonts/hoverage-webfont.eot');
+    src:url('../fonts/hoverage-webfont.eot') format('embedded-opentype'),
+        url('../fonts/hoverage-webfont.woff') format('woff'),
+        url('../fonts/hoverage-webfont.ttf') format('truetype'),
+        url('../fonts/hoverage-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hoverage_vintage';
+    src:url('../fonts/hoverage_vintage-webfont.eot');
+    src:url('../fonts/hoverage_vintage-webfont.eot') format('embedded-opentype'),
+        url('../fonts/hoverage_vintage-webfont.woff') format('woff'),
+        url('../fonts/hoverage_vintage-webfont.ttf') format('truetype'),
+        url('../fonts/hoverage_vintage-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'glyphicons';
+    src:url('../fonts/glyphicons-halflings-regular.eot');
+    src:url('../fonts/glyphicons-halflings-regular.eot') format('embedded-opentype'),
+        url('../fonts/glyphicons-halflings-regular.woff') format('woff'),
+        url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'),
+        url('../fonts/glyphicons-halflings-regular.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iconeRound:before {
+	content: "\ea92";
+}
+
+.icon-locked:before {
+	content: "\e604";
+}
+
+.icon-cuve_recup:before {
+	content: "\e605";
+}
+
+.icon-affiche:before {
+	content: "\e606";
+}
+
+.icon-toilettes:before {
+	content: "\e607";
+}
+
+.icon-arrosage:before {
+	content: "\e608";
+}
+
+.icon-bouche_egout:before {
+	content: "\e609";
+}
+
+.icon-shop:before {
+	content: "\e60a";
+}
+
+.icon-fontaine:before {
+	content: "\e60b";
+}
+
+.icon-dechet_lac:before {
+	content: "\e60c";
+}
+
+.icon-filtrage:before {
+	content: "\e60d";
+}
+
+.icon-denoncer:before {
+	content: "\e60e";
+}
+
+.icon-ctrl_canalisation:before {
+	content: "\e60f";
+}
+
+.icon-ctrl_instal_hydro:before {
+	content: "\e610";
+}
+
+.icon-ctrl_canaux:before {
+	content: "\e611";
+}
+
+.icon-ctrl_step:before {
+	content: "\e612";
+}
+
+.icon-loi:before {
+	content: "\e613";
+}
+
+.icon-block_prod:before {
+	content: "\e614";
+}
+
+.icon-test_conso:before {
+	content: "\e615";
+}
+
+.icon-campagne:before {
+	content: "\e616";
+}
+
+.icon-label:before {
+	content: "\e617";
+}
+
+.icon-hydrante:before {
+	content: "\e618";
+}
+
+.icon-sidenav-action:before {
+	content: "\e600";
+}
+
+.icon-sidenav-docs:before {
+	content: "\e601";
+}
+
+.icon-sidenav-mafia:before {
+	content: "\e602";
+}
+
+.icon-sidenav-tactic:before {
+	content: "\e603";
+}
+
+.icon-cross:before {
+	content: "\ea0f";
+}
+
+
+
+ion-view{
+	font-family: $fairview;
+	background: url('../img/halftoneDark.png') top left repeat;
+}
+
+.login_header{
+	background: $hydro-black-nav !important;
+	.title{
+		background: url("../img/HydroLogoHeader.png") center center no-repeat;
+		background-size: 150px;
+		display: block;
+		font-family: $hoverage;   
+		color: $hydro-white-text !important;
+		text-transform: lowercase;
+	}
+}
+
+.inside_header{
+	#header_wrap{
+		background: $hydro-blue !important;
+		height: 44px;
+		position:relative;
+		z-index: 100;
+		.logo_hydro{
+			height: 40px;
+			width: 40px;
+			left: 5px;
+			bottom:-15px;
+			position: absolute;
+			
+		}
+		.xp_wrapper{
+			float: left;
+			margin-left: 17%;
+			height: 34px;
+			margin-top:10px;
+			width: 66%;
+			.xp{
+				float: left;
+				font-size: 15px;
+				margin:0;
+				width: 10%;
+			}
+			.loader_wrap{
+				float: right;
+				margin: 0;
+				height: 15px;
+				width:90%;
+				border: solid 1px $hydro-white-text;
+				.fill{
+					background: $hydro-white-text;
+					height: 100%;
+					width: 30%;
+					position: relative;
+					p{
+						color: $hydro-blue-dark;
+						position: absolute;
+						font-size: 10px;
+						margin: 0;
+						top:-2px;
+						vertical-align: middle;
+						left: 5%;
+						span{
+							font-size:5px;
+						}
+					}
+				}
+			}
+			.grade{
+				margin:0;
+				width: 90%;
+				float: right;
+				height: 12px;
+				font-size: 8px;
+				margin-bottom: 0;
+			}
+			p{
+				font-family: $hoverage;
+				color: $hydro-white-text;
+				text-transform: lowercase;
+				float: left;
+				display: inline;
+			}
+		}
+		.logout{
+			float: right;
+			margin-right: 5px;
+			margin-top: 12px;
+			width: 20px;
+		}
+	}
+	.nav-bar-block{
+		display: none;
+	}
+}
+
+.registerForm{
+	font-family: $fairview;
+	padding: 40px 20px 20px;
+	background: $hydro-white-text;
+	position: relative;
+	margin-top: 5vh;
+	input{
+		font-family: $fairview;
+	}
+	img{
+		position: absolute;
+		top:-30px;
+		width: 60px;
+		height: auto;
+		left: 40%;
+	}
+	.switch_form{
+		background: none;
+		border: none;
+		float: right;
+		width: 100%;
+		padding: 0;
+		box-shadow: none;
+		color: $hydro-blue-middle;
+		text-transform: lowercase;
+		font-family: $hoverage;
+		font-size: 1.5em;
+		position: relative;
+		padding-top: 5px;
+		.toggle{
+			position: absolute;
+			right: 3px;
+		}
+		&.state-false, &.state-{
+				.track:before{
+					position: absolute;
+					font-family: $icomoon;
+					content: "\e604";
+					color: $hydro-blue-middle;
+					top:11px;
+					right: 11px;
+				}
+			}
+			&.state-true{
+				.track:before{
+					position: absolute;
+					font-family: $glyph;
+					content: "\e008";
+					color: $hydro-blue-middle;
+					font-size: x-small;
+					top:13px;
+					left: 13px;
+				}
+			}
+	}
+	.button-login{
+		border: none;
+		border-bottom: solid 3px $hydro-blue-dark;
+		background-color: $hydro-blue-middle;
+		color: $hydro-white-text;
+		font-family: $fairview;
+		font-size: 2em;
+		-webkit-transition: all 50ms ease-in-out;
+		-moz-transition: all 50ms ease-in-out;
+		-ms-transition: all 50ms ease-in-out;
+		-o-transition: all 50ms ease-in-out;
+		transition: all 50ms ease-in-out;
+
+		&.activated{
+			border-bottom-width: 1px;
+			padding-top: 2px;
+			-webkit-transition: all 50ms ease-in-out;
+			-moz-transition: all 50ms ease-in-out;
+			-ms-transition: all 50ms ease-in-out;
+			-o-transition: all 50ms ease-in-out;
+			transition: all 50ms ease-in-out;
+		}
+	}
+}
+
+#action{
+	color: $hydro-blue;
+	float: left;
+	position: relative;
+	.icon-cross{
+		position: absolute;
+		right: 0;
+		top:0;
+		font-size: larger;
+		color: $hydro-blue-middle;
+	}
+	#title{
+		width: 100%;
+		float: left;
+		display: inline-block;
+		color: $hydro-blue;
+		h1{
+			font-family: $hoverage;
+			text-transform: lowercase;
+			color: $hydro-black-nav;
+			span{
+				margin-right: 10px;
+			}
+		}
+	}
+	#action_attributes{
+		float: left;
+		display: inline-block;
+		.attribute{
+			float: left;
+			width: 50%;
+			.label{
+				float: left;
+				font-family: $hoverage;
+				text-transform: lowercase;
+			}
+			.value{
+				float: left;
+				font-family: $fairview;
+				font-size: larger;
+				padding-left: 15px;
+				color: $hydro-blue-middle;
+			}
+		}
+		.full{
+			width: 100%;
+		}
+	}
+	.button-action{
+		border: none;
+		display: block;
+		float: left;
+		margin-top: 5vh;
+		border-bottom: solid 3px $hydro-blue-dark;
+		background-color: $hydro-blue-middle;
+		color: $hydro-white-text;
+		font-family: $hoverage;
+		text-transform: lowercase;
+		font-size: 2em;
+		-webkit-transition: all 50ms ease-in-out;
+		-moz-transition: all 50ms ease-in-out;
+		-ms-transition: all 50ms ease-in-out;
+		-o-transition: all 50ms ease-in-out;
+		transition: all 50ms ease-in-out;
+
+		&.activated{
+			border-bottom-width: 1px;
+			padding-top: 2px;
+			-webkit-transition: all 50ms ease-in-out;
+			-moz-transition: all 50ms ease-in-out;
+			-ms-transition: all 50ms ease-in-out;
+			-o-transition: all 50ms ease-in-out;
+			transition: all 50ms ease-in-out;
+		}
+	}
+}
+
+ion-content.padding{
+	padding-top: 5vh;
+}

@@ -1,0 +1,58 @@
+<ion-nav-bar class="bar-stable login_header">
+</ion-nav-bar>
+
+<ion-view >
+    <ion-nav-bar class="bar-stable">
+    </ion-nav-bar>
+    <ion-content class="padding">
+        <div class="registerForm">
+           <button class="button" ng-click="login=!login" ></button>
+            <img src="../img/logo_header_@2x.png" alt="logo_hydro"/>
+             <form name="loginForm" ng-if="login" ng-controller="loginController">
+                <div class="list">
+                    <label class="item item-input">
+                        <input type="text" class="form-control" ng-model="user.username" id="exampleInputEmail1" placeholder="Enter username">
+                    </label>
+                    <label class="item item-input">
+                        <input type="password" class="form-control" ng-model="user.password" id="exampleInputPassword1" placeholder="Password">
+                        </div>
+
+                        <!-- Display an error message here, above the submit button, if an error occurred. -->
+                        <p ng-if="error" class="error">{{ error}}</p>
+
+                        <!--
+                          The submit button.
+                          The "ng-click" directive indicates which scope function to call when the form is submitted.
+                          The "ng-disabled" directive is used to disable the button if the form is invalid (i.e. the first name or last name is missing).
+                        -->
+                        <button type="submit" class="button button-full button-login" ng-click="loginFunc()">login</button>
+                        </form>
+            <form  name="registerForm" ng-if="!login" ng-controller="registerController">
+
+
+                <div class="list">
+                    <label class="item item-input">
+                        <input type="text" class="form-control" ng-model="user.username" id="exampleInputEmail1" placeholder="Enter username">
+                    </label>
+                    <label class="item item-input">
+                        <input type="password" class="form-control" ng-model="user.password" id="exampleInputPassword1" placeholder="Password">
+                    </label>
+                    <label class="item item-input">
+                        <input type="password" class="form-control" ng-model="user.confirm" id="confirm" placeholder="Confirm password">
+                    </label>
+                </div>
+
+                <!-- Display an error message here, above the submit button, if an error occurred. -->
+                <p ng-if="error" class="error">{{ error}}</p>
+
+                <!--
+                  The submit button.
+                  The "ng-click" directive indicates which scope function to call when the form is submitted.
+                  The "ng-disabled" directive is used to disable the button if the form is invalid (i.e. the first name or last name is missing).
+                -->
+                <button type="submit" class="button button-full button-login" ng-click="registerFunc()">créer un compte</button>
+            </form> 
+        </div>
+
+    </ion-content>
+</ion-view>

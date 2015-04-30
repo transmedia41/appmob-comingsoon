@@ -1,0 +1,62 @@
+.leaflet-control {
+    visibility: hidden;
+}
+@font-face {
+    font-family: 'fairview_regular';
+    src:url('../fonts/fairview_regular-webfont.eot');
+    src:url('../fonts/fairview_regular-webfont.eot') format('embedded-opentype'),
+        url('../fonts/fairview_regular-webfont.woff') format('woff'),
+        url('../fonts/fairview_regular-webfont.ttf') format('truetype'),
+        url('../fonts/fairview_regular-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fairview_smallcaps';
+    src:url('../fonts/fairview_smallcaps-webfont.eot');
+    src:url('../fonts/fairview_smallcaps-webfont.eot') format('embedded-opentype'),
+        url('../fonts/fairview_smallcaps-webfont.woff') format('woff'),
+        url('../fonts/fairview_smallcaps-webfont.ttf') format('truetype'),
+        url('../fonts/fairview_smallcaps-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hoverage';
+    src:url('../fonts/hoverage-webfont.eot');
+    src:url('../fonts/hoverage-webfont.eot') format('embedded-opentype'),
+        url('../fonts/hoverage-webfont.woff') format('woff'),
+        url('../fonts/hoverage-webfont.ttf') format('truetype'),
+        url('../fonts/hoverage-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hoverage_vintage';
+    src:url('../fonts/hoverage_vintage-webfont.eot');
+    src:url('../fonts/hoverage_vintage-webfont.eot') format('embedded-opentype'),
+        url('../fonts/hoverage_vintage-webfont.woff') format('woff'),
+        url('../fonts/hoverage_vintage-webfont.ttf') format('truetype'),
+        url('../fonts/hoverage_vintage-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+.hydro {
+    font-family: "hoverage";
+    margin-top: 15px
+}
+
+.title {
+    font-family: "hoverage";    
+}
+#comingsoon{
+    width: 100%;
+   
+}
